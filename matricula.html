@@ -85,17 +85,17 @@
                         <ul class="opcs">
                             <li class="marcado-pagamento">
                                 <label for="cartao">Cartão de Crédito</label>
-                                <input type="radio" id="cartao" data-pagamento="input" name="igual" checked>
+                                <input type="radio" id="cartao" data-pagamento="opc" name="igual" checked>
                                 <div class="marcado"></div>
                             </li>
                             <li>
                                 <label for="boleto">Boleto Bancário</label>
-                                <input type="radio" id="boleto" data-pagamento="input" name="igual">
+                                <input type="radio" id="boleto" data-pagamento="opc" name="igual">
                                 <div class="marcado"></div>
                             </li>
                         </ul>
                     </div>
-                    <div class="cartao">
+                    <div class="cartao" data-pagamento>
                         <form action="" class="fn-corpo-texto-media form-cartao">
                             <div class="input-linha">
                                 <label for="nome-cartao">Nome no cartão</label>
@@ -139,7 +139,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="boleto">
+                    <div class="boleto js-inativo" data-pagamento>
                         <a href="" class="fn-corpo-texto-media-n btn-confirmar">Baixar Boleto</a>
                         <span class="fn-corpo-texto-media">Boletos demoram até 3 dias úteis para confirmar o
                             pagamento</span>
@@ -150,17 +150,17 @@
                     <ul class="opcs">
                         <li class="marcado-aula">
                             <label for="infantil">Infantil</label>
-                            <input type="radio" id="infantil" name="igual-aula" data-aula="input" checked>
+                            <input type="radio" id="infantil" name="igual-aula" data-aula="opc" checked>
                             <div class="marcado"></div>
                         </li>
                         <li>
                             <label for="adulto">Adulto</label>
-                            <input type="radio" id="adulto" name="igual-aula" data-aula="input">
+                            <input type="radio" id="adulto" name="igual-aula" data-aula="opc">
                             <div class="marcado"></div>
                         </li>
                         <li>
                             <label for="profissional">Profissional</label>
-                            <input type="radio" id="profissional" name="igual-aula" data-aula="input">
+                            <input type="radio" id="profissional" name="igual-aula" data-aula="opc">
                             <div class="marcado"></div>
                         </li>
                     </ul>
@@ -221,5 +221,6 @@
             <img src="./images/surfbot-icon-branco.svg" alt="Simbolo da escola presente na logo">
         </div>
     </footer>
+    <script type="module" src="./js/matricula.js"></script>
 </body>
 </html>

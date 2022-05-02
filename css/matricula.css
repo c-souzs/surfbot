@@ -149,9 +149,6 @@ select option[value=""][disabled] {
     color: #445566;
     margin-bottom: 15px;
 }
-.boleto{
-    display: none;
-}
 
 /*Alinhamento form pessoal*/
 .form-pessoal > div {
