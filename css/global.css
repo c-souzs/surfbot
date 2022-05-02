@@ -20,7 +20,16 @@ ul{
 a{
     text-decoration: none;
 }
-
+/*Iten de css usado no js*/
+.js-inativo{
+    display: none;
+}
+.js-ativo{
+    display: block !important;
+}
+.js-ativo-flex{
+    display: flex !important; 
+}
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;500;600;700&display=swap');
 .fn-corpo-texto-pequena{
