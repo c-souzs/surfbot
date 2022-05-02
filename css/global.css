@@ -20,6 +20,7 @@ ul{
 a{
     text-decoration: none;
 }
+
 /*Iten de css usado no js*/
 .js-inativo{
     display: none;
@@ -30,6 +31,7 @@ a{
 .js-ativo-flex{
     display: flex !important; 
 }
+
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;500;600;700&display=swap');
 .fn-corpo-texto-pequena{
@@ -255,14 +257,23 @@ footer p{
     .h1-titulo{
         font-size: 3rem;
     }
-    .menu-lista li::before, .menu-lista li:last-child a::after{
-        display: none !important;
-    }
     .menu-lista{
         display: none;
+        position: absolute;
+        z-index: 999;
+        right: 0;
+        background-color: #17222D;
+        box-shadow: 2px 2px 2px 0 #09111a;
+        padding: 15px 30px;
     }
-    .btn-menu{
+    .menu-lista li{
+        justify-content: end;
+    }
+    .btn-menu, .menu-lista li{
         display: flex;
+    }
+    .menu-lista li::before{
+        display: none !important;
     }
     footer .container{
         flex-direction: column-reverse;
