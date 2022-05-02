@@ -76,7 +76,30 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.btn-menu{
+    font: 700 .875rem/1.4 'Nunito', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #09111a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    gap: 6px;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 600;
+}
+.btn-menu::after{
+    width: 12px;
+    height: 2px;
+    background-color: #fff;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+    content: '';
+    display: inline-block;
+    transition: .3s;
+}
 /*Formulário*/
 label{
     display: block;
@@ -200,8 +223,45 @@ footer{
 }
 footer .container{
     color: #fff;
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+footer p{
+    text-align: center;
+}
+
+/*Responsividade*/
+@media(max-width:1200px){
+    .h1-titulo{
+        font-size: 4rem;
+    }
+    .menu-lista > li + li::before{
+        margin: 0 15px;
+    }
+}
+@media(max-width:600px){
+    .h1-titulo{
+        font-size: 3rem;
+    }
+    .menu-lista li::before, .menu-lista li:last-child a::after{
+        display: none !important;
+    }
+    .menu-lista{
+        display: none;
+    }
+    .btn-menu{
+        display: flex;
+    }
+    footer .container{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .introducao form button::after,
+    .btn-esqueleto::after{
+        width: 16px;
+        height: 16px;
+    }
 }

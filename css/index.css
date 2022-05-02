@@ -3,7 +3,7 @@
     background-color: #1188EE;
 }
 .aviso .container{
-    padding: 5px;
+    padding: 5px 20px;
     color: #fff;
 }
 
@@ -316,4 +316,115 @@
     position: absolute;
     top: 25%;
     right: 0;
+}
+
+/*Responsividade*/
+@media(max-width: 1200px){
+    .introducao .container{
+        display: block;
+    }
+    .introducao .h1-titulo{
+        margin-bottom: 30px;
+    }
+    .praia .container{
+        gap: 40px;
+    }
+    .info-direita > img:first-child{
+        max-height: 470px;
+    }
+    .como-chegar{
+        margin-top: -80px;
+    }
+    .como-chegar > img:first-child{
+        min-height: 150px;
+    }
+    .aulas{
+        background-image: url('../images/bg-icones-cinza.svg');
+    }
+    .aulas .aulas-lista{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    }
+    .frase span{
+        font-size: 4rem;
+    }
+    .contato-direito{
+        padding-right: 60px;
+    }
+    .contato-esquerdo{
+        padding-left: 60px;
+    }
+}
+@media(max-width: 800px){
+    .aulas .aulas-lista{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 450px));
+    }
+    .praia .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .info-direita > img:first-child{
+        max-height: 570px;
+        width: 100%;
+    }
+    .como-chegar{
+        margin-top: -175px;
+    }
+    .como-chegar > img:first-child{
+        max-height: none;
+        height: 275px;
+    }
+    .contato .container{
+        display: block;
+    }
+    .contato-direito{
+        padding-right: 0;
+        border-right: none;
+        margin-bottom: 30px;
+    }
+    .contato-esquerdo{
+        max-width: none;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .contato-esquerdo > div{
+        flex: 1;
+        min-width: 200px;
+    }
+    .social{
+        border: 0;
+        padding: 0;
+    }
+}
+@media(max-width: 600px){
+    .introducao form{
+        display: block;
+        box-shadow: none;
+    }
+    .introducao form input{
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .introducao button{
+        border-radius: 5px;
+    }
+    .como-chegar{
+        margin-top: -80px;
+    }
+    .como-chegar > img:first-child{
+        height: 150px;
+    }
+    .aulas .aulas-lista{
+        padding: 0 40px;
+        grid-template-columns: 1fr;
+    }
+    .aulas .aula{
+        padding: 30px;
+    }
+    .frase span{
+        font-size: 2.625rem !important;
+    }
 }
