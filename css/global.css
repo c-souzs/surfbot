@@ -1,0 +1,207 @@
+/* Reset geral */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body, main{
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Nunito:wght@400;500;600;700&display=swap');
+.fn-corpo-texto-pequena{
+    font: 400 .875rem/1.4 'Nunito', sans-serif;
+}
+.fn-corpo-texto-pequena-n{
+    font: 700 .875rem/1.4 'Nunito', sans-serif;
+}
+.fn-corpo-texto-media{
+    font: 400 1.125rem/1.6 'Nunito', sans-serif;
+}
+.fn-corpo-texto-media-n{
+    font: 700 1.125rem/1.6 'Nunito', sans-serif;
+}
+.fn-corpo-texto-grande{
+    font: 400 1.5rem/1.5 'Nunito', sans-serif;
+}
+.fn-corpo-texto-grande-n{
+    font: 700 1.5rem/1.5 'Nunito', sans-serif;
+}
+
+/*Container*/
+.container{
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+/*Classes e estilos geral*/
+.h1-titulo{
+    font:  400 4.5rem/1 'Alice', 'sans serif';
+    color: #17222D !important;
+}
+.btn-esqueleto{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #445566;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.btn-esqueleto::after{
+    width: 12px;
+    height: 12px;
+    content: '';
+    display: inline-block;
+    background-image: url('../images/seta-branca.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Formulário*/
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #445566 ;
+    font-weight: 700 !important;
+}
+input::-webkit-input-placeholder{
+    color: #BBCCDD;
+}
+input, select, label, textarea{
+    font: inherit;
+}
+input, textarea, select{
+    margin-bottom: 15px;
+    width: 100%;
+    color: #17222D;
+    background: #EFF4F9;
+    box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/*Header*/
+header{
+    background-color: #17222D;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu-lista > li{
+    display: flex;
+    align-items: center;
+}
+.menu-lista > li + li::before{
+    width: 8px;
+    height: 8px;
+    content: '';
+    display: inline-block;
+    margin: 0 30px;
+    background-image: url('../images/elipse-branca.svg');
+}
+.menu-lista > li a{
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    position: relative;
+}
+.menu-lista > li:last-child a::after{
+    width: 100%;
+    height: 2px;
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #EE2211;
+}
+.header .container, .menu-lista{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Aulas*/
+.aula{
+    padding: 30px 60px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(187, 204, 221, 0.4), 0px 10px 10px rgba(187, 204, 221, 0.4);
+    background-color: #fff;
+    position: relative;
+}
+.aula .decoracao{
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.aula h2{
+    text-transform: uppercase;
+    color: #445566;
+    text-align: center;
+}
+.aula ul{
+    padding: 30px 0;
+    border-top: 2px solid #EFF4F9;
+    border-bottom: 2px solid #EFF4F9;
+}
+.aula ul li + li{
+    margin-top: 15px;
+}
+.aula ul li{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    color: #17222D !important;
+}
+.aula ul li::before{
+    width: 8px;
+    height: 8px;
+    content: '';
+    display: inline-block;
+    background-image: url('../images/elipse-vermelha.svg');
+}
+.aula span{
+    display: block;
+    color: #1188EE;
+}
+
+/*Footer*/
+footer{
+    background-color: #1188EE;
+}
+footer .container{
+    color: #fff;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
