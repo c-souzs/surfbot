@@ -111,6 +111,44 @@ a{
     display: inline-block;
     transition: .3s;
 }
+/*Menu drop down*/
+[data-drop-down]{
+    position: relative;
+}
+[data-drop-down]:hover .menu-drop-down, [data-drop-down].js-ativo-flex .menu-drop-down{
+    display: block;
+}
+.menu-drop-down{
+    display: none;
+    position: absolute;
+    z-index: 500;
+    top: 50px;
+    left: 0;
+    background-color: #1188EE;
+    border: 3px solid #09111a;
+    padding: 0 15px;
+}
+.menu-drop-down li a{
+    transition: .3s;
+}
+.menu-drop-down li:hover a{
+    color: #09111a;
+}
+.menu-drop-down::before{
+    width: 0;
+    height: 0;
+    content: '';
+    display: block;
+    border-bottom: 12px solid #09111a;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 40px;
+}
+.menu-drop-down > li a{
+    padding: 10px;
+}
 /*Formulário*/
 label{
     display: block;
@@ -260,7 +298,7 @@ footer p{
     .menu-lista{
         display: none;
         position: absolute;
-        z-index: 999;
+        z-index: 950;
         right: 0;
         background-color: #17222D;
         box-shadow: 2px 2px 2px 0 #09111a;
@@ -268,12 +306,22 @@ footer p{
     }
     .menu-lista li{
         justify-content: end;
+        text-align: end;
     }
     .btn-menu, .menu-lista li{
         display: flex;
     }
     .menu-lista li::before{
         display: none !important;
+    }
+    [data-drop-down]{
+        display: block !important;
+    }
+    .menu-drop-down{
+        position: static;
+    }
+    .menu-drop-down::before{
+        display: none;
     }
     footer .container{
         flex-direction: column-reverse;
