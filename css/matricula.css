@@ -1,0 +1,246 @@
+/*Exceções*/
+.matricula .h1-titulo{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #EFF4F9;
+}
+.matricula .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 450px;
+    position: relative;
+    z-index: 999;
+}
+
+.matricula{
+    position: relative;
+}
+
+/*Adaptação do formulário*/
+input{
+    min-width: 250px;
+}
+select{
+    width: 100%;
+    height: 49px;
+    min-width: 150px;
+}
+select[disabled]{
+    color: #BBCCDD;
+}
+select:required:invalid {
+    color: #BBCCDD;
+}
+select option{
+    color: #17222D;
+}
+select option[value=""][disabled] {
+    display: none;
+}
+
+/*Radio personalizado*/
+.opcs{
+    font: 700 1.125rem/1.6 'Nunito', sans-serif;
+}
+.opcs li{
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    color: #445566;
+    position: relative;
+
+}
+.opcs li:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.opcs li:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.opcs label{
+    cursor: pointer;
+    padding: 10px 0;
+    margin: 0;
+}
+.opcs input{
+    opacity: 0;
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+}
+.opcs li input:checked ~ .marcado{
+    border: 5px solid #1188EE;
+}
+.opcs .marcado{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #1188EE;
+    cursor: pointer;
+}
+.radio-marcado{
+    background-color: #BBCCDD !important;
+}
+.opcs, .opcs li{
+    display: flex;
+}
+
+/*Pagamento*/
+.pagamento{
+    margin-bottom: 30px;
+}
+.pagamento h3{
+    margin: 30px 0;
+    color: #1188EE;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #EFF4F9;
+}
+.pagamento .opcs li{
+    background-color: #EFF4F9;
+}
+.marcado-pagamento{
+    background-color: #BBCCDD !important;
+}
+.cartao .form-r2{
+    padding-bottom: 15px;
+    border-bottom: 2px solid #EFF4F9;
+}
+.cartao .confirmar{
+    margin-top: 15px;
+}
+.confirmar{
+    display: block !important;
+}
+.confirmar p{
+    color: #445566;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.confirmar p::before{
+    width: 12px;
+    height: 15px;
+    content: '';
+    display: inline-block;
+    background-image: url('../images/cadeado.svg');
+}
+.boleto a{
+    width: fit-content;
+    display: block;
+    margin-bottom: 7.5px;
+}
+.btn-confirmar{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #1188EE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.confirmar span, .boleto span{
+    display: block;
+    color: #445566;
+    margin-bottom: 15px;
+}
+.boleto{
+    display: none;
+}
+
+/*Alinhamento form pessoal*/
+.form-pessoal > div {
+    display: flex;
+    gap: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-pessoal > div > div {
+    flex: 1;
+}
+.form-pessoal .input-linha{
+    display: block;
+}
+
+/*Alinhamento form cartao*/
+.form-cartao > div, .expiracao-flex{
+    display: flex;
+    gap: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-cartao > div > div, .expiracao-flex > div {
+    flex: 1;
+}
+.form-cartao .input-linha{
+    display: block;
+}
+
+/*Aulas lista*/
+.matricula-esquerda{
+    height: fit-content;
+    background-color: #EFF4F9;
+    box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+    border-radius: 5px;
+    padding: 30px;
+    overflow-x: hidden;
+}
+.matricula-esquerda h3{
+    color: #445566;
+    margin-bottom: 30px;
+}
+.matricula-esquerda .opcs li{
+    background-color: #fff;
+}
+.matricula-esquerda .aula{
+    opacity: .5;
+}
+.matricula-esquerda .marcado-aula{
+    opacity: 1 !important;
+}
+.marcado-aula{
+    background-color: #BBCCDD !important;
+}
+.matricula-esquerda .opcs li:nth-child(2){
+    border-left: 2px solid #EFF4F9;
+    border-right: 2px solid #EFF4F9;
+}
+.matricula-esquerda .opcs{
+    margin-bottom: 30px;
+}
+.matricula-esquerda .aulas-lista{
+    width: 1170px;
+    display: flex;
+    gap: 60px;
+    transition: .3s;
+}
+.matricula-esquerda .aulas-lista .marcado-aula{
+    opacity: 1;
+    background-color: #fff !important;
+}
+.matricula-esquerda .aula{
+    width: 350px;
+}
+.matricula-esquerda .aula h2{
+    margin: 15px 0;
+}
+.matricula-esquerda .aula span{
+    margin-top: 20px;
+}
+.matricula-deco{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+/*Background decoração*/
+.matricula > .decoracao{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
