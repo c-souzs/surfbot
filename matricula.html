@@ -59,18 +59,18 @@
                         <div>
                             <div>
                                 <label for="cep">CEP</label>
-                                <input type="text" data-validar="cpe" placeholder="22222000">
+                                <input type="text" data-validar="cep" data-localizacao="cep" placeholder="22222000">
                                 <p class="error-formulario-esqueleto"></p>
                             </div>
                             <div>
                                 <label for="estado">Estado</label>
-                                <input type="text" data-input="estado" disabled placeholder="São paulo">
+                                <input type="text" data-localizacao="estado" disabled placeholder="São paulo">
                             </div>
                         </div>
                         <div>
                             <div>
                                 <label for="cidade">Cidade</label>
-                                <select id="cidade" data-input="cidades" disabled required>
+                                <select id="cidade" data-localizacao="cidades" disabled required>
                                     <option value="" disabled selected>São Paulo</option>
                                 </select>
                             </div>
@@ -231,6 +231,10 @@
             <img src="./images/surfbot-icon-branco.svg" alt="Simbolo da escola presente na logo">
         </div>
     </footer>
+    <div class="carregando fn-corpo-texto-grande-n">
+        <div class="loader"></div>
+        <p>Carregando</p>
+    </div>
     <script type="module" src="./js/matricula.js"></script>
 </body>
 </html>
