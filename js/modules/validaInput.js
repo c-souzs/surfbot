@@ -1,3 +1,5 @@
+import localizacao from "./localizacao.js";
+
 export default function validaInput(tipoDado, valor, elemento) {
 
     // Armazena as regex e a mensage mde erro baseado em cada tipo de validacao
@@ -34,6 +36,7 @@ export default function validaInput(tipoDado, valor, elemento) {
     } else{
         error('');
         elemento.setAttribute('validado', '');
+        tipoDado === 'cep' ? localizacao(valor) : '';
     }
 
     // Adiciona o evento de clique para que não seja mostrado a mensagem de erro quando o usário está digitando
