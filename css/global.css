@@ -111,6 +111,19 @@ a{
     display: inline-block;
     transition: .3s;
 }
+.menu-lista.js-ativo{
+    animation: animaMenu .3s forwards;
+}
+@keyframes animaMenu {
+    from{
+        opacity: 0;
+        transform: translate3d(50px, 0 , 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
 /*Menu drop down*/
 [data-drop-down]{
     position: relative;
@@ -126,7 +139,8 @@ a{
     left: 0;
     background-color: #1188EE;
     border: 3px solid #09111a;
-    padding: 0 15px;
+    padding: 0 30px;
+    animation: animaMenuDropDown .5s forwards;
 }
 .menu-drop-down li a{
     transition: .3s;
@@ -148,6 +162,16 @@ a{
 }
 .menu-drop-down > li a{
     padding: 10px;
+}
+@keyframes animaMenuDropDown{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 /*Formulário*/
@@ -303,11 +327,17 @@ footer p{
         right: 0;
         background-color: #17222D;
         box-shadow: 2px 2px 2px 0 #09111a;
-        padding: 15px 30px;
+        padding: 15px 0;
     }
     .menu-lista li{
         justify-content: end;
         text-align: end;
+    }
+    .menu-lista > li a{
+        padding: 10px 30px;
+    }
+    .menu-lista > li:last-child a::after{
+        position: static;
     }
     .btn-menu, .menu-lista li{
         display: flex;
@@ -320,6 +350,7 @@ footer p{
     }
     .menu-drop-down{
         position: static;
+        padding: 0 15px;
     }
     .menu-drop-down::before{
         display: none;
