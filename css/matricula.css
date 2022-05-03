@@ -18,9 +18,20 @@
     position: relative;
 }
 
+/*Erro formulário*/
+.error-formulario-esqueleto{
+    font-size: .875rem;
+    font-family: 'Nunito';
+    font-weight: 600;
+    color: #EE2211;
+    position: absolute;
+    margin-top: 5px;
+}
+
 /*Adaptação do formulário*/
 input{
     min-width: 250px;
+    margin-bottom: 0;
 }
 select{
     width: 100%;
@@ -157,6 +168,8 @@ select option[value=""][disabled] {
     gap: 15px 30px;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    margin-bottom: 40px;
 }
 .form-pessoal > div > div {
     flex: 1;
@@ -172,6 +185,11 @@ select option[value=""][disabled] {
     gap: 15px 30px;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    margin-bottom: 40px;
+}
+.expiracao-flex{
+    margin-bottom: 0;
 }
 .form-cartao > div > div, .expiracao-flex > div {
     flex: 1;
