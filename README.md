@@ -11,7 +11,7 @@
 
 <div id="sobre">
   <h1>📎 Sobre. </h1>
-  <p> O projeto surfbot foi desenvolvido com o objetivo de aplicar o conhecimento em html e css e relembrar conceitos de javascript visto no curso técnico. O sistema apresenta duas páginas, uma para divulgação da escola e outra voltada para a compra dos planos ofertados. Ambas as páginas são responsiva e contém animações feita com javascript. A página de compras, por sua vez, apresenta somente seu layout, sem a integração com alguma API de pagamentos.
+  <p> O projeto surfbot foi desenvolvido com o objetivo de aplicar o conhecimento em html e css e relembrar conceitos de javascript visto no curso técnico. O sistema apresenta duas páginas, uma para divulgação da escola e outra voltada para a compra dos planos ofertados. Ambas as páginas são responsiva e contém animações feita com javascript. A página de compras, por sua vez, apresenta somente seu layout, sem a integração com alguma API de pagamentos. O sistema foi desenvolvimento usando uma metodologia que consiste na criação de uma branch para cada funcionalidade com o foco em compreender o uso do github.
   </p>
  <p>Atualmente o projeto esta <b>FINALIZADO</b> e pode ser vizualizado na imagem abaixo ou acessado atráves do link: <a href="https://souzzs.github.io/surfbot/">Surfbot online 🏄</a>.</p>
   <p align="center"><img src="./images/surfbot-demo-prinicipal.gif"></p>
@@ -24,6 +24,9 @@
   <li>Acessibilidade com tags html.</li>
   <li>Macetes com after e before.</li>
   <li>Animações na DOM com javascript.</li>
+  <li>Github</li>
+  <li>Gitflow</li>
+  <li>Gitpages</li>
  </ul>
 <div>
  
