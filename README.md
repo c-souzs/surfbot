@@ -1,6 +1,5 @@
 <p><h1 align="center">🌊 Surfbot 🌊 </h1></p>
-<p align="center">Site para divulgação de uma das melhores escolas (fictícia) de surf.</p>
-
+<p align="center">Site de divulgação de uma escola fictícia de surf de alta qualidade.</p>
 <p align="center">
  <a href="#sobre">Sobre</a> •
  <a href="#aprendizados">Aprendizados</a> •
@@ -8,23 +7,20 @@
  <a href="#instalacao">Instalação</a> •  
  <a href="#licenca">Licença</a>
 </p>
-
 <div id="sobre">
-  <h1>📎 Sobre. </h1>
-  <p> O projeto surfbot foi desenvolvido com o objetivo de aplicar o conhecimento em html e css e relembrar conceitos de javascript visto no curso técnico. O sistema apresenta duas páginas, uma para divulgação da escola e outra voltada para a compra dos planos ofertados. Ambas as páginas são responsiva e contém animações feita com javascript. A página de compras, por sua vez, apresenta somente seu layout, sem a integração com alguma API de pagamentos. O sistema foi desenvolvimento usando uma metodologia que consiste na criação de uma branch para cada funcionalidade com o foco em compreender o uso do github.
-  </p>
- <p>Atualmente o projeto esta <b>FINALIZADO</b> e pode ser vizualizado na imagem abaixo ou acessado atráves do link: <a href="https://souzzs.github.io/surfbot/">Surfbot online 🏄</a>.</p>
+  <h1>📎 Sobre</h1>
+  <p>O projeto Surfbot foi criado com o objetivo de aplicar conhecimentos de HTML e CSS e revisar conceitos de JavaScript vistos em um curso técnico. O sistema possui duas páginas: uma para divulgação da escola e outra para compra de planos oferecidos. Ambas as páginas são responsivas e possuem animações feitas com JavaScript. A página de compras apresenta apenas seu layout, sem integração com alguma API de pagamento. O sistema foi desenvolvido usando uma metodologia que consiste em criar uma branch para cada funcionalidade com o objetivo de compreender o uso do GitHub.</p>
+  <p>Atualmente, o projeto está <b>CONCLUÍDO</b> e pode ser visualizado na imagem abaixo ou acessado pelo link: <a href="https://souzzs.github.io/surfbot/">Surfbot online 🏄</a>.</p>
   <p align="center"><img src="./images/surfbot-demo-prinicipal.gif"></p>
-  <p><em>Pse: Vale ressaltar que o layout e a ideia do projeto foram retirados do curso da <a href="https://www.origamid.com/">origamid</a>. Entretanto o projeto é feito no modulo de UI/UX Design da plataforma. Logo existe apenas o seu layout pronto, todo o código e detalhes foram feito à parte por mim.</em></p>
+  <p><em>Observação: o layout e a ideia do projeto foram retirados do curso da <a href="https://www.origamid.com/">Origamid</a>. No entanto, o projeto foi feito no módulo de UI/UX Design da plataforma. Portanto, existe apenas o layout pronto, todo o código e detalhes foram feitos separadamente por mim.</em></p>
 </div>
-
 <div id="aprendizados">
- <h1>📚 Aprendizados. </h1>
+ <h1>📚 Aprendizados</h1>
  <ul>
-  <li>Acessibilidade com tags html.</li>
-  <li>Macetes com after e before.</li>
-  <li>Animações na DOM com javascript.</li>
-  <li>Github</li>
+  <li>Acessibilidade com tags HTML</li>
+  <li>Truques com after e before</li>
+  <li>Animações na DOM com JavaScript</li>
+  <li>GitHub</li>
   <li>Gitflow</li>
   <li>Gitpages</li>
  </ul>
@@ -55,10 +51,15 @@
 <div id="autor">
   <h1>✏️ Autor.</h1>
   <p>Desenvolvimento por <a href="https://github.com/souzzs">Caio Souza</a>.</p>
-  <p>
-    <a href="https://instagram.com/seu-usuario/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" alt="Instagram Badge"></a>
-    <a href="https://discord.gg/seu-server"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&amp;logo=discord&amp;logoColor=white" alt="Discord Badge"></a>
-    <a href="https://www.linkedin.com/in/seu-usuario/"><img src="https://img.shields.io/badge/  LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="Linkedin"></a>
+  <a href="https://www.linkedin.com/in/souzzs/" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
+  <a href="mailto:souzsdev@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white">
+  </a>
+  <a href="https://discord.gg/BsnqGK6e" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">
+  </a>
   </p>
 </div>
 
